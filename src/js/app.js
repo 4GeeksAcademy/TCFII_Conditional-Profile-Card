@@ -53,22 +53,22 @@ function render(variables = {}) {
     origCity = "Your city?";
   }
 
-  let myTwitter = `<li><a href="${variables.twitter}"><i class = fa fa-twitter"></i></a>`;
+  let myTwitter = `<li><a href="${variables.twitter}"><i class = "fa fa-twitter"></i></a></li>`;
   if (variables.twitter == null) {
     myTwitter = "";
   }
 
-  let myGithub = `<li><a href="${variables.github}"><i class = fa fa-github"></i></a>`;
+  let myGithub = `<li><a href="${variables.github}"><i class = "fa fa-github"></i></a></li>`;
   if (variables.github == null) {
     myGithub = "";
   }
 
-  let myLinkedIn = `<li><a href="${variables.linkedin}"><i class = fa fa-linkedin"></i></a>`;
+  let myLinkedIn = `<li><a href="${variables.linkedin}"><i class = "fa fa-linkedin"></i></a></li>`;
   if (variables.linkedin == null) {
     myLinkedIn = "";
   }
 
-  let myInsta = `<li><a href="${variables.instagram}"><i class = fa fa-instagram"></i></a>`;
+  let myInsta = `<li><a href="${variables.instagram}"><i class = "fa fa-instagram"></i></a></li>`;
   if (variables.instagram == null) {
     myInsta = "";
   }
@@ -81,10 +81,10 @@ function render(variables = {}) {
           <h2>${myRole}</h2>
           <h3>${origCity + ", " + origCountry}</h3>
           <ul class="${variables.socialMediaPosition}">
-            <li>${myTwitter}</li>
-            <li>${myGithub}</li>
-            <li>${myLinkedIn}</li>
-            <li>${myInsta}</li>
+            ${myTwitter}
+            ${myGithub}
+            ${myLinkedIn}
+            ${myInsta}
           </ul>
         </div>
     `;
